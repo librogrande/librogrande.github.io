@@ -9,26 +9,21 @@
       color: purple;
       text-align: center;
       padding: 15px 20px;
-      text-decoration: none;
-      font-size: 25px;
+      text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+
       }
       .topnav a:hover {
         background-color: purple;
-        color: #AFAF00;
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
+        color: #AFAF00;      
       }
       .topnav a:hover::after {
-        
-        transform: scaleX(1);
-        transform-origin: left;
+         content: '';
+         width: 0px;
+         height: 1px;
+         display: block;
+         background: black;
+         transition: 300ms;
+
       }
     </style>
     <div class="topnav" style="background-color:AFAF00; overflow: hidden;">
